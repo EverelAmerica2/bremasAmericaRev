@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo200x200.png">
+    <title>Everel America &mdash; Rocker Switch, Pushbutton Switch</title>
+</head>
+
+<body class="body-container">
+    <header class="section-header">
+        <div class="header">
+            <div class="header-logo"><a href='index.html'><img src='./img/bremas-america-logo.png' atl='Everel America Logo' /></a></div>
+            <nav class="header-nav" id='header-nav1'>
+                <a href="index.html" class="header-nav-item">Home</a>
+                <a href="about.html" class="header-nav-item">About the Company</a>
+                <a href="products.html" class="header-nav-item">Products</a>
+                <a href="distribution.html" class="header-nav-item">Sales Network</a>
+                <a href="contact.html" class="header-nav-item">Contact Us</a>
+            </nav>
+
+             <!--Navigation: designed by Jonas Schmedtmann, the instructor of Advanced CSS course and modified by Ming-Shiuan Tsai-->
+             <div class="navigation navigation-phone" id='nevigation-toggle-section'>
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+
+                <div class="navigation__background">&nbsp;</div>
+
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="index.html" class="navigation__link" ><span>01</span>Home</a></li>
+                        <li class="navigation__item"><a href="about.html" class="navigation__link" ><span>02</span>About Us</a></li>
+                        <li class="navigation__item"><a href="products.html" class="navigation__link"><span>03</span>Products</a></li>
+                        <li class="navigation__item"><a href="distribution.html" class="navigation__link" ><span>04</span>Sales Network</a></li>
+                        <li class="navigation__item"><a href="contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
+                        </ul>
+                </nav>
+            </div>
+
+
+            <div class="header-content">
+                <div class="header-content-title margin-bottom-medium">Need a quote or have a project inquiry? Contact us today!</div>
+                <div class="header-content-text"></div>
+            </div>
+
+            <button atl='' class="header-scroll" id='header-scroll' onclick='scrollArrow()'>
+
+                &lsaquo;
+            </button>
+        </div>
+    </header>
+
+    <main class='main' id='main'>
+        <section class="section-contact">
+            <div class="contact-form">
+                <div class="contact-form-title title-medium text-center margin-bottom-medium">Contact Us</div>
+                <div class="contact-form-text">For faster response, please provide your project information, such as, MOQ, project timeline, special requirements of the switch and series or part number you are interested in. 
+                    If you do not hear back from us within 48 hours, please call/email us.</div>
+                <form class='contact-form-content text-center' method="POST"
+                    action="https://formspree.io/sales@everelamerica.com">
+                    <input class='contact-form-name margin-bottom-xs' type="text" name="name" placeholder="Your name">
+                    <input class='contact-form-company margin-bottom-xs' type="text" name="comapny"
+                        placeholder="Your company website">
+                    <input class='contact-form-number margin-bottom-xs' type="text" name="phone number"
+                        placeholder="Your phone number">
+                    <input class='contact-form-email margin-bottom-xs' type="email" name="email"
+                        placeholder="Your email">
+                    <textarea class='contact-form-msg margin-bottom-xs' name="message"
+                        placeholder="Message..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-locations">
+                <div class="contact-locations-box">
+                    <div class="contact-locations-title title-medium margin-bottom-medium text-center">Main Locations
+                    </div>
+                    <div class="contact-locations-content margin-bottom-small">We have experienced Sales Representatives and Application Engineers who
+                        are available to discuss with your requirements. Please feel free to contact us.</div>
+                    <div class="contact-locations-sub">
+                        <div class="contact-locations-sub-title title-xs margin-bottom-xs">Buford,
+                            Georgia, USA (Headquarter)</div>
+                        <div class="contact-locations-sub-content margin-bottom-small">
+                            Tel: (678)765-8966
+                            <br />
+                            Fax: 770-216-1566
+                            <br />
+                            Email: sales@everelamerica.com
+                            <br />
+                            Location: 5095 Bristol Industrial Way, Buford, GA 30518, USA
+                            <br />
+                        </div>
+                    </div>
+                    <div class="contact-locations-sub">
+                        <div class="contact-locations-sub-title title-xs margin-bottom-xs">Jacksonville, Florida, USA
+                        </div>
+                        <div class="contact-locations-sub-content margin-bottom-small">
+                            Tel: (904)374-1208
+                            <br />
+                            Fax: 770-216-1566
+                            <br />
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class='section-footer footer'>
+
+    </footer>
+
+    <script src='./js/index.js'></script>
+
+
+</body>
+
+</html>

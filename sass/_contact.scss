@@ -1,0 +1,118 @@
+.section-contact{
+    color: $color-grey-dark-1;
+}
+
+.contact-form{
+    padding: 2rem 4rem;
+    width:100%;
+    font-size: 1.5rem;
+    
+    &-title{
+        width:50%;
+        margin: 3rem auto;
+        color:$color-primary;
+        color: $color-red-primary;
+    }
+
+    &-content{
+        width:50%;
+        margin: auto;
+        @include respond(phone){
+            width: 100%;
+        }
+    }
+
+    &-text{
+        width: 50%;
+        margin:0 auto;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: justify;
+
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+
+    &-name, &-company,&-email, &-number{
+        font-size: inherit;
+        width: 70%;
+        line-height:2;
+
+        @include respond(phone){
+            width: 90%;
+        }
+
+    }
+
+    &-msg{
+        font-size: inherit;
+        width: 70%;
+        line-height:2;
+        height:16rem;
+
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+
+    button{
+        display: block;
+        margin:auto;
+        font-size: inherit;
+        line-height: 3rem;
+        width:6rem;
+        color:$color-grey-light-1;
+        // background-color: $color-primary;
+        // border: .2rem solid $color-primary;
+        background-color: $color-red-primary;
+        border: .2rem solid $color-red-primary;
+        border-radius: .4rem;
+        transition:.1s;
+        box-shadow: 0 .2rem .2rem rgba($color-black,.4);
+
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+            transform: translateY(.1rem) scale(.95);
+            box-shadow: none;
+        }
+    }
+}
+
+.contact-locations{
+    padding: 2rem 4rem;
+    width: 100%;
+
+    &-content{
+        font-size: 1.8rem;
+    }
+
+    &-box{
+        width:50%;
+        margin: auto;
+
+        @include respond(phone){
+            width: 90%;
+        }
+    }
+
+    &-title{
+        color:$color-primary;
+        color: $color-red-primary;
+    }
+
+    &-sub{
+
+        &-title{
+
+        }
+
+        &-content{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
