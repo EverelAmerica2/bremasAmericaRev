@@ -1,0 +1,217 @@
+.section-product{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.box{
+
+    &-parent{
+        min-height: 25rem;
+        min-width: 25rem;
+        display: inline-block;
+        width: calc((100% - 2 * 10rem) / 3);
+        border-radius: 1rem;
+        position: relative;
+        transition: .2s;
+        padding: 3rem;
+
+        @include respond(tab-port){
+            width: calc((100% - 2 * 8rem) / 3);
+        }
+        
+        @include respond(phone){
+            width: 100%;
+        }
+
+        &:not(:last-child){
+            margin-right: 9rem;
+
+            @include respond(tab-port){
+                margin-right: 7rem;
+            }
+
+            @include respond(phone){
+                margin-right:0;
+            }
+        }
+
+        &:hover{
+            border-radius: 1rem;
+            box-shadow: 0 0 8px rgba($color-black,.8);
+            transform: scale(1.08);
+
+            .box-title{
+                text-decoration: underline;
+            }
+        }
+        
+        &-empty{
+            opacity: 0;
+            @include respond(phone){
+                display: none;
+            }
+        }
+    }
+
+    &-img{
+
+        img{
+            height: 20rem;
+            width: 20rem;
+            object-fit:contain;
+            @include respond(phone){
+                height: 15rem;
+                width: 15rem;
+            }
+        }
+    }
+
+    &-title{
+
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $color-black;
+        text-align: center;
+
+        @include respond(phone){
+            font-size: 2rem;
+        }
+    }
+
+    &-content{
+        font-size: 1.8rem;
+        color:$color-grey-dark-1;
+        width:70%;
+        text-align: center;
+        margin: 0 auto;
+
+        @include respond(tab-port){
+            width:95%;
+        }
+    }
+
+}
+
+.section-product-category{
+    width: 100%;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+}
+.product{
+
+    &-content{
+        font-size: 2rem;
+    }
+
+    &-category{
+
+        &-top{
+            width: 70%;
+            margin:auto;
+            text-align: center;
+            border-bottom: .2rem solid $color-grey-light-2;
+            padding: 2rem;
+
+            @include respond(phone){
+                width: 95%;
+            }
+        }
+
+        &-bottom{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+
+        }
+    }
+}
+
+
+.section-product-item{
+    width:80%;
+    margin:auto;
+
+    @include respond(tab-port){
+        width: 95%;
+    }
+}
+
+.product-item-box{
+    width:80%;
+    display: inline-block;
+    margin:6rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+
+    a{
+        font-size: inherit;
+        line-height: inherit;
+        color:$color-grey-light-2;
+
+        &:hover{
+            text-decoration: underline;
+            color:$color-black;
+        }
+    }
+
+    @include respond(tab-land){
+        width: 100%;
+        margin: 3rem auto;
+        padding: 1rem;
+    }
+}
+
+.product-item-header{
+    height: 17rem;
+}
+
+.product-item{
+    &-img{
+        width: calc((100% - 2rem) / 2);
+        display: inline-block;
+        padding: 2rem 3rem;
+        margin:0 auto;
+
+        @include respond(phone){
+            width: 100%;
+        }
+
+        img{ 
+            max-height: 25rem;
+            width: 80%;
+            min-width: 21rem;
+            object-fit: contain;
+
+            @include respond(phone){
+                max-height: 18rem;
+            }
+        }
+    }
+
+    &-content{
+        color:$color-black;
+        width: calc((100% - 2rem) / 2);
+        display: inline-block;
+        text-align: left;
+        padding-bottom:4rem;
+
+        @include respond(phone){
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        li{
+            font-size: 2rem;
+            line-height: 1.5;
+
+            @include respond(tab-port){
+                font-size: 1.8rem;
+            }
+        }        
+    }
+}
