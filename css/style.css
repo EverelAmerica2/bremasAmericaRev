@@ -53,9 +53,10 @@ a {
   border: 0.2rem solid #aaa;
   border-radius: 3px;
   text-decoration: underline;
-  margin: 2rem 0; }
+  margin: 2rem 0;
+  color: #fff; }
   .btn-learnMore:hover {
-    background-color: #04214C;
+    background-color: #B23F19;
     cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
     .btn-learnMore {
@@ -188,16 +189,17 @@ a {
 
 .section-header {
   height: 100vh;
-  background-image: linear-gradient(to left, rgba(4, 33, 76, 0.5), rgba(4, 33, 76, 0.9)), url("../img/statue-of-liberty.jpg");
+  background-image: linear-gradient(to bottom, rgba(196, 19, 1, 0.8), rgba(196, 19, 1, 0.4), rgba(178, 63, 25, 0.4), rgba(178, 63, 25, 0.8)), url("../img/statue-2148396_1280.jpg");
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
   position: relative;
   margin-bottom: 1rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
 
 .header {
   height: 100%;
-  color: #aaa;
+  color: #fff;
   padding: 2rem 4rem;
   line-height: 1.5; }
   @media only screen and (max-width: 56.25em) {
@@ -228,9 +230,9 @@ a {
     right: 4rem; }
     .header-nav-item {
       text-decoration: none;
-      color: #aaa; }
+      color: #fff; }
       .header-nav-item:hover {
-        color: #fff; }
+        text-decoration: underline; }
       .header-nav-item:not(:last-child) {
         margin-right: 1.8rem; }
     @media only screen and (max-width: 56.25em) {
@@ -490,7 +492,8 @@ a {
 .overview-top {
   background-color: #f9f7f6;
   padding: 4rem 6rem;
-  height: 52vh; }
+  height: 52vh;
+  color: #fff; }
   .overview-top-title {
     color: #B23F19;
     font-weight: 700; }
@@ -502,7 +505,8 @@ a {
   background-color: #fff;
   padding: 3rem 6rem;
   margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color: #fff; }
   .overview-bottom-title {
     color: #B23F19;
     font-weight: 700; }
@@ -517,7 +521,7 @@ a {
   transition: all .2s ease;
   overflow: hidden; }
   .overview-box-top-1 {
-    background-image: linear-gradient(to right, rgba(4, 33, 76, 0.5), rgba(4, 33, 76, 0.1)), url("../img/Canva-microphone.jpg");
+    background-image: linear-gradient(to right, rgba(83, 83, 83, 0.5), rgba(83, 83, 83, 0.1)), url("../img/Canva-microphone.jpg");
     opacity: .8;
     width: calc((100% - 3rem) / 2);
     float: left;
@@ -534,7 +538,7 @@ a {
         margin: 1rem auto;
         color: #fff; } }
   .overview-box-top-2 {
-    background-image: linear-gradient(to left, rgba(4, 33, 76, 0.6), rgba(4, 33, 76, 0.2)), url("../img/Canva-hourglass.jpg");
+    background-image: linear-gradient(to left, rgba(83, 83, 83, 0.6), rgba(83, 83, 83, 0.2)), url("../img/Canva-hourglass.jpg");
     opacity: .7;
     width: calc((100% - 3rem) / 2);
     float: left;
@@ -558,7 +562,8 @@ a {
     .overview-box-bottom-1:not(:last-child), .overview-box-bottom-2:not(:last-child), .overview-box-bottom-3:not(:last-child), .overview-box-bottom-4:not(:last-child) {
       margin-right: 2.7rem; }
     .overview-box-bottom-1:hover, .overview-box-bottom-2:hover, .overview-box-bottom-3:hover, .overview-box-bottom-4:hover {
-      color: #fff; }
+      color: #fff;
+      opacity: .9; }
     @media only screen and (max-width: 81.25em) {
       .overview-box-bottom-1, .overview-box-bottom-2, .overview-box-bottom-3, .overview-box-bottom-4 {
         width: calc((100% - 2 * 3rem) / 2); } }
@@ -568,6 +573,14 @@ a {
         height: 40vh;
         margin: 1rem auto;
         color: #fff; } }
+  .overview-box-bottom-1 {
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.6) 0%, rgba(83, 83, 83, 0.6) 100%), url(../img/sezionatori_ac.jpg); }
+  .overview-box-bottom-2 {
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.6) 0%, rgba(83, 83, 83, 0.6) 100%), url(../img/cam_switches.jpg); }
+  .overview-box-bottom-3 {
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.6) 0%, rgba(83, 83, 83, 0.6) 100%), url(../img/photovoltaic-2138992_1280.jpg); }
+  .overview-box-bottom-4 {
+    background-image: linear-gradient(to bottom, rgba(83, 83, 83, 0.6) 0%, rgba(83, 83, 83, 0.6) 100%), url(../img/solder-1038523_1280.jpg); }
 
 .overview-title-big {
   font-size: 4rem; }
@@ -1069,8 +1082,6 @@ a {
     line-height: 3rem;
     width: 6rem;
     color: #f9f7f6;
-    background-color: #04214C;
-    border: 0.2rem solid #04214C;
     background-color: #B23F19;
     border: 0.2rem solid #B23F19;
     border-radius: .4rem;
