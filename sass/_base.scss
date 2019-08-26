@@ -7,7 +7,7 @@ $color-primary-light:#244569;
 $color-primary:#04214C;
 //$color-red-primary:#770B00;
 $color-red-primary: #B23F19;
-//$color-red-primary:#C41301;
+$color-red-primary-2:#C41301;
 
 $color-secondary:#f9f7f6;
 
@@ -102,9 +102,10 @@ a{
     border-radius: 3px;
     text-decoration: underline;
     margin:2rem 0;
+    color:$color-white;
     
     &:hover{
-        background-color: $color-primary;
+        background-color: $color-red-primary;
         cursor:pointer;
     }
 
