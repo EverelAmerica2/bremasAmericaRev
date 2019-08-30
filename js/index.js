@@ -9,16 +9,18 @@ const printHeader = function(){
     $('#header-nav1').append(`
     <a href="index.html" class="header-nav-item">Home</a>
     <a href="about.html" class="header-nav-item">About the Company</a>
-    <a href="#" class="header-nav-item">Products</a>
+    <a href="products.html" class="header-nav-item">Products</a>
     <a href="#" class="header-nav-item">Sales Network</a>
+    <a href="#" class="header-nav-item">Downloads</a>
     <a href="contact.html" class="header-nav-item">Contact Us</a>
     `);
 
     $('.navigation__list').append(`
     <li class="navigation__item"><a href="index.html" class="navigation__link" ><span>01</span>Home</a></li>
     <li class="navigation__item"><a href="about.html" class="navigation__link" ><span>02</span>About Us</a></li>
-    <li class="navigation__item"><a href="#" class="navigation__link" ><span>03</span>Products</a></li>
+    <li class="navigation__item"><a href="products.html" class="navigation__link" ><span>03</span>Products</a></li>
     <li class="navigation__item"><a href="#" class="navigation__link" ><span>04</span>Sales Network</a></li>
+    <li class="navigation__item"><a href="#" class="navigation__link" ><span>04</span>Downloads</a></li>
     <li class="navigation__item"><a href="contact.html" class="navigation__link" ><span>05</span>Contact Us</a></li>
     `);
 }
