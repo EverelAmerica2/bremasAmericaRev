@@ -48,6 +48,11 @@
                 }
             }
 
+            a:hover{
+              color: $color-black;
+              text-decoration: underline;
+            }
+
             @include respond(tab-port){
               padding: 2rem 2rem;
             }
